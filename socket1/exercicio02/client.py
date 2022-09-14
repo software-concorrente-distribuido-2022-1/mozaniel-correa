@@ -30,7 +30,7 @@ print(response)
 response = client.send_message(json.dumps({ 'age': 19, 'name': 'Igor', 'gender': 'M'}))
 print(response)
 
-response = client.send_message(json.dumps({ 'age': 17, 'name': 'Andrey', 'gender': 'F'}))
+response = client.send_message(json.dumps({ 'age': 17, 'name': 'Andrey', 'gender': 'M'}))
 print(response)
 
 response = client.send_message(json.dumps({ 'age': 21, 'name': 'Gabriella', 'gender': 'F'}))

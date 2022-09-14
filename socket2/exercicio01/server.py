@@ -11,7 +11,7 @@ class BaseServer:
         self.handler = handler
     
     def start_server(self):
-        host = 'localhost'
+        host = '0.0.0.0'
 
         server_socket = socket.socket()
         server_socket.bind((host, self.port))

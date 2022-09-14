@@ -1,0 +1,13 @@
+version: "3.5"
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: sergio_db
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=sergio
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+      
